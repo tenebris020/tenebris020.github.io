@@ -82,3 +82,8 @@ button
     align-items: center;
     justify-content: center;
 }
+.formfor
+{
+    width: 100px;
+    height: 100px;
+}
