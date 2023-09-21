@@ -88,3 +88,23 @@ button
     width: 100px;
     height: 100px;
 }
+.form1
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.box
+{
+    padding: 8px 35px;
+    font-size: 17,5px;
+    color: green;
+    border: 10px solid green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    
+    
+}
