@@ -78,18 +78,6 @@ button
 }
 .form1
 {
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.form1 div
-{
-    width: 100px;
-    height: 100px;
-}
-.form1
-{
     
     display: flex;
     justify-content: center;
