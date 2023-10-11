@@ -9,16 +9,96 @@
     <title>2015</title>
 </head>
 
-<body class="centeredbody">
+<body>
+    <header>
+        <h2>
+            Web-Technologies
+        </h2>
+        <img src="/html/img/logo.png" alt="логотип">         
+        <nav>
+            <ul>
+                <li><a href="form.html">Регистрационная форма</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="summary.html">Резюме</a></li>
+                <li><a href="competencion.html">Компетенции</a></li>
+                <li><a href="Photo.html">Фотографии</a></li>
+            </ul>
+    </header>
 
-    <main class="textpadding centeredmain">
+    <main class="for-main-form">
 
         <div class="for-form">
-            <h1 class="textshadow">Добро пожаловать!</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore quisquam facilis, quaerat harum quibusdam ipsum numquam nisi quos error mollitia aliquid doloremque voluptas, alias minima molestiae velit repellat sequi.
+            <div class="form">
+
+                <form action="" method="get">
+
+                    <div>Как вам удобно получить ответ:</div>
+                    <label for="c_mail">
+                        <input type="radio" name="com_tion" id="c_mail"> по почте
+                    </label><br>
+                    <label for="c_tel">
+                        <input type="radio" name="com_tion" id="c_tel"> по телефону
+                    </label><br>
+                    <label for="c_none">
+                        <input type="radio" name="com_tion" id="c_none"> не нужно отвечать
+                    </label><br>
+
+                    <div>
+                        <label for="theme">Укажите тему вопроса</label><br>
+                        <select name="theme" id="theme">
+                            <option value="work">работа</option>
+                            <option value="cooperation">сотрудничество</option>
+                            <option value="personal">личное</option>
+                        </select>
+                    </div>
+
+                    <div>И еще один вопрос?</div>
+                    <label for="chb1">
+                        <input type="checkbox" name="chb1" id="chb1"> может так
+                    </label><br>
+                    <label for="chb2">
+                        <input type="checkbox" name="chb2" id="chb2"> или не так
+                    </label><br>
+                    <label for="chb3">
+                        <input type="checkbox" name="chb3" id="chb3"> иначе
+                    </label><br>
+
+                    <div>
+                        <label for="name">Ваше имя</label>
+                        <input type="name" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">адрес почты</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="tel">номер телефона</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+
+                    <div>Ваш вопрос</div>
+                    <div>
+                        <textarea cols="30" style="resize: none;"></textarea>
+                    </div>
+
+                    <input type="submit" value="отправить вопрос">
+
+                </form>
+
+            </div>
         </div>
 
     </main>
+    <footer>
+        <div class="wrapper flex-between-center">
+            <h6>Bocharova Angelina  2015</h6>
+            <div>
+                <a href="https://vk.com/tenebris020" target="_blank"><img src="/html/img/vk.png" alt="логотип_вк" width="90" height="90"></a>
+                <a href="https://t.me/tenebris020" target="_blank"><img src="/html/img/telegramm.png" alt="логотип_тг" width="90" height="90"></a>
+                <a href="https://github.com/tenebris020" target="_blank"><img src="/html/img/github.png" alt="логотип_гит" width="90"height="90"></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

@@ -184,3 +184,25 @@ button
     height: 50px;
     border-radius: 30px;
 }
+.for-main-form
+{
+    display: flex;
+    justify-content: center;
+}
+
+.for-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 600px;
+}
+
+.form
+{
+    height: 500px;
+    width: 300px;
+    border: 10px solid rgb(105, 174, 84);
+    border-radius: 7px;
+}
