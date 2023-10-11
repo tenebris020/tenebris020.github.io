@@ -201,8 +201,8 @@ button
 
 .form
 {
-    height: 500px;
+    height: 350px;
     width: 300px;
-    border: 10px solid rgb(105, 174, 84);
+    border: 3px solid rgb(105, 174, 84);
     border-radius: 7px;
 }
