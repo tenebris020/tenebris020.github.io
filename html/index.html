@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        area.value = localStorage.getItem('area');
+        area.oninput = () => {
+          localStorage.setItem('area', area.value)
+        };
+    </script>
     <title>2015</title>
 </head>
 
@@ -34,6 +40,11 @@
                 <div class ="text-button-row-centered">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore quisquam facilis, quaerat harum quibusdam ipsum numquam nisi quos error mollitia aliquid doloremque voluptas, alias minima molestiae velit repellat sequi.
                     <button type="button" onclick="alert('Жми')">Жми</button>
+                </div>
+                <div>
+                    <textarea style="width:200px; height: 60px;" id="area" placeholder="Напишите сообщение здесь"></textarea>
+                    <br>
+                    <button onclick="localStorage.removeItem('area');area.value=''">Очистить</button>
                 </div>
         </div>
     </main>
