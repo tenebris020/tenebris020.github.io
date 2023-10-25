@@ -57,76 +57,76 @@
     <main class="for-main-form">
 
         <div class="for-form">
-            <div class="form">
 
-                <form action="" method="get" name="myform">
+                <form class="form" method="get" name = "myform">
+                    <div class="form-flex">
+                        <div class="flex">
+                            <div>Как вам удобно получить ответ:</div>
+                            <label for="c_mail">
+                                <input type="radio" name="com_tion" id="c_mail" value="по почте"> по почте
+                            </label>
+                            <label for="c_tel">
+                                <input type="radio" name="com_tion" id="c_tel" value="по телефону"> по телефону
+                            </label>
+                            <label for="c_none">
+                                <input type="radio" name="com_tion" id="c_none" value="никак"> не нужно отвечать
+                            </label>
+                        </div>
 
-                    <div>Как вам удобно получить ответ:</div>
-                    <label for="c_mail">
-                        <input type="radio" name="com_tion" id="c_mail" value="по почте"> По почте
-                    </label><br>
-                    <label for="c_tel">
-                        <input type="radio" name="com_tion" id="c_tel" value="по телефону"> По телефону
-                    </label><br>
-                    <label for="c_none">
-                        <input type="radio" name="com_tion" id="c_none" value="никак"> Не нужно отвечать
-                    </label><br>
+                        <div class="flex">
+                            <label for="theme">Укажите тему вопроса</label>
+                            <select class="input-style" name="theme" id="theme">
+                                <option value="work">работа</option>
+                                <option value="cooperation">сотрудничество</option>
+                                <option value="personal">личное</option>
+                            </select>
+                        </div>
 
-                    <div>
-                        <label for="theme">Укажите тему вопроса</label><br>
-                        <select name="theme" id="theme">
-                            <option value="work">Работа</option>
-                            <option value="cooperation">Сотрудничество</option>
-                            <option value="personal">Личное</option>
-                        </select>
+                        <div class="flex">
+                            <div>И еще один вопрос?</div>
+                            <label for="chb1">
+                                <input type="checkbox" name="chb" id="chb1" value = "может так"> может так
+                            </label>
+                            <label for="chb2">
+                                <input type="checkbox" name="chb" id="chb2" value = "или не так"> или не так
+                            </label>
+                            <label for="chb3">
+                                <input type="checkbox" name="chb" id="chb3" value = "иначе"> иначе
+                            </label>
+                        </div>
+
+                            <div class="flex-between-center">
+                                <label for="name">Ваше имя</label>
+                                <input class="input-style" type="text" name="name" id="name">
+                            </div>
+                            <div class="flex-between-center">
+                                <label for="email">Адрес почты</label>
+                                <input class="input-style" type="text" name="email" id="email">
+                            </div>
+                            <div class="flex-between-center">
+                                <label for="tel">Номер телефона</label>
+                                <input class="input-style" type="text" name="tel" id="tel">
+                            </div>
+                        <div>
+                            <div>Ваш вопрос:</div>
+                            <textarea cols="30" style="resize: none;"></textarea>
+                        </div>
+
                     </div>
-
-                    <div>И еще один вопрос?</div>
-                    <label for="chb1">
-                        <input type="checkbox" name="chb" id="chb1" value="может так"> может так
-                    </label><br>
-                    <label for="chb2">
-                        <input type="checkbox" name="chb" id="chb2" value="или не так"> или не так
-                    </label><br>
-                    <label for="chb3">
-                        <input type="checkbox" name="chb" id="chb3" value="иначе"> иначе
-                    </label><br>
-
-                    <div>
-                        <label for="name">Ваше имя</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div>
-                        <label for="email">e-mail</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div>
-                        <label for="tel">Номер телефона</label>
-                        <input type="tel" name="tel" id="tel">
-                    </div>
-
-                    <div>Ваш вопрос</div>
-                    <div>
-                        <textarea cols="30" style="resize: none;"></textarea>
-                    </div>
-
-                    <input type="submit" value="отправить вопрос">
-
+                    <input class="input-style flex-button" type="submit" value="Отправить вопрос">
                 </form>
-                <button onclick="check_form()">Проверить</button>
-
-            </div>
+                <button onclick="check_form()">проверка формы</button>
         </div>
-
-
     </main>
+
+    
     <footer>
         <div class="wrapper flex-between-center">
-            <h6>Bocharova Angelina  2015</h6>
-            <div>
-                <a href="https://vk.com/tenebris020" target="_blank"><img src="/html/img/vk.png" alt="логотип_вк" width="90" height="90"></a>
-                <a href="https://t.me/tenebris020" target="_blank"><img src="/html/img/telegramm.png" alt="логотип_тг" width="90" height="90"></a>
-                <a href="https://github.com/tenebris020" target="_blank"><img src="/html/img/github.png" alt="логотип_гит" width="90"height="90"></a>
+        <h6>Bocharova Angelina  2015</h6>
+        <div>
+            <a href="https://vk.com/tenebris020" target="_blank"><img src="/html/img/vk.png" alt="логотип_вк" width="90" height="90"></a>
+            <a href="https://t.me/tenebris020" target="_blank"><img src="/html/img/telegramm.png" alt="логотип_тг" width="90" height="90"></a>
+            <a href="https://github.com/tenebris020" target="_blank"><img src="/html/img/github.png" alt="логотип_гит" width="90"height="90"></a>
             </div>
         </div>
     </footer>

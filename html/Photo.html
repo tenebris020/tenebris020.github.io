@@ -6,6 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>2015</title>
+    <script>
+
+        let arrimages = new Array();
+
+        for (i = 1; i < 7; i++)
+        {
+            arrimages[i] = `width: ${document.images[i].width}px; height: ${document.images[i].height}px;`;
+        }
+
+        function ResizeBig()
+        {
+            for (i = 1; i < 7; i++)
+            {
+                document.images[i].style = `width: ${document.images[i].width + 10}px; height: ${document.images[i].height + 10}px;`;
+            }
+        }
+
+        function ResizeSmall()
+        {
+            for (i = 1; i < 7; i++)
+            {
+                document.images[i].style = `width: ${document.images[i].width - 10}px; height: ${document.images[i].height - 10}px;`;
+            }
+        }
+
+        function ResizeDefault()
+        {
+            for (i = 1; i < 7; i++)
+            {
+                document.images[i].style = arrimages[i];
+            }
+        }
+
+    </script>
 </head>
 
 <body>
@@ -50,6 +84,11 @@
 
             <img class="pictureborder" src="/html/img/6.jpg" alt="" width="320" height="280">
             <h5>Красивый мужчина</h5>
+        </div>
+        <div>
+            <button type="button" onclick="ResizeBig()">Увеличить размер картинки</button>
+            <button type="button" onclick="ResizeSmall()">Уменьшить размер картинки</button>
+            <button type="button" onclick="ResizeDefault()">Вернуть в обычное картинки</button>
         </div>
     </main>
 
