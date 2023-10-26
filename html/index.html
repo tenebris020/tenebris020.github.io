@@ -13,7 +13,7 @@
 
     <header>
         <div class="wrapper">
-            <h2>
+            <h2 class="no_select">
                 Web-Technologies
             </h2>
             <img src="/html/img/logo.png" alt="логотип" width="50" height="50">            
@@ -31,7 +31,7 @@
 
     <main class="textpadding">
         <div class="wrapper">
-            <h1 class="textshadow">Добро пожаловать!</h1>
+            <h1 class="no_select">Добро пожаловать!</h1>
                 <div class ="text-button-row-centered">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore quisquam facilis, quaerat harum quibusdam ipsum numquam nisi quos error mollitia aliquid doloremque voluptas, alias minima molestiae velit repellat sequi.
                     <button type="button" onclick="alert('Жми')">Жми</button>
@@ -46,8 +46,18 @@
                     area.oninput = () => {
                       localStorage.setItem('area', area.value)
                     };
+                    function f(){
+                        event.target.classList.add("select");
+                    }
+                    let list_no_select = Array.from(document.getElementsByClassName("no_select"));
+                    list_no_select.forEach((element) => {
+                        element.addEventListener("click", f);
+                    });
+                        
+                   
+                
+                
                 </script>
-                <a onmouseover="this.style.color='red'" onmouseout="this.style.color='cyan'"><span style='font-size:50'>Наведи курсор</span></a>
                 
         </div>
     </main>

@@ -234,10 +234,17 @@ button
     display: flex;
 }
 
-.input-style
+.no_select
 {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(112, 81, 55);
+    border-radius: 5px;
+    width: fit-content;
+}
+.select
+{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 115, 0);
     border-radius: 5px;
     width: fit-content;
 }
