@@ -248,3 +248,7 @@ button
     border-radius: 5px;
     width: fit-content;
 }
+.dark-theme-blocks{
+    background-color: rgb(20, 19, 19);
+    color: white;
+}

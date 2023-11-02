@@ -6,16 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>2015</title>
-    
+    <script>
+        var isDark=false;
+        function toDark(){
+            //var list=Array.from(document.getElementsByTagName("*"));
+            //alert(list[0])
+            if(isDark==false){
+        Array.from(document.getElementsByTagName("*")).forEach(element => {
+            element.classList.add("dark-theme-blocks");
+            
+        });
+        isDark=true;
+    }
+            else{
+            Array.from(document.getElementsByTagName("*")).forEach(element => {
+            element.classList.remove("dark-theme-blocks"); 
+        });
+        isDark=false;
+        }
+    }
+    </script>
 </head>
 
 <body>
 
     <header>
+
         <div class="wrapper">
             <h2>
                 Web-Technologies
             </h2>
+            <button  onclick="toDark()">
+                <p>Change theme</p>
+            </button>
             <img src="/html/img/logo.png" alt="логотип" width="90" height="90">         
             <nav>
                 <ul>
