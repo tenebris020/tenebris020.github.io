@@ -39,7 +39,7 @@
             <div>
                 <h1 class="textshadow">Компетенции</h1>
 
-                <div class="block-margin">
+                <div class="block-margin" id="mama-blok">
 
                     <div class="block">
                         <div class="main-info-block">
@@ -147,6 +147,7 @@
         </div>
     </footer>
     <script>
+        
         var isDark=false;
         function toDark(){
            
@@ -161,13 +162,14 @@
                 isDark=false;
             }
         }
+        
         function AddBlock()
         {
             // Создание главного блока
             let div_block = document.createElement('div');
             div_block.className = "block";
             div_block.id = "div_block";
-            document.getElementById("big-block").append(div_block);
+            document.getElementById("mama-blok").append(div_block);
 
             // Создание блока с информацией
             let main_info_div_block = document.createElement('div');
