@@ -6,26 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>2015</title>
-    <script>
-        var isDark=false;
-        function toDark(){
-            //var list=Array.from(document.getElementsByTagName("*"));
-            //alert(list[0])
-            if(isDark==false){
-        Array.from(document.getElementsByTagName("*")).forEach(element => {
-            element.classList.add("dark-theme-blocks");
-            
-        });
-        isDark=true;
-    }
-            else{
-            Array.from(document.getElementsByTagName("*")).forEach(element => {
-            element.classList.remove("dark-theme-blocks"); 
-        });
-        isDark=false;
-        }
-    }
-    </script>
+    
 </head>
 
 <body>
@@ -53,6 +34,7 @@
     </header>
 
     <main class="textpadding">
+        
         <div class="wrapper">
             <div>
                 <h1 class="textshadow">Компетенции</h1>
@@ -141,6 +123,17 @@
 
             </div>
         </div>
+        <h3>Время</h3>
+        <textarea cols="30" style="resize: none;" id="timearea"></textarea>
+        <h3>Название</h3>
+        <textarea cols="30" style="resize: none;" id="namearea"></textarea>
+        <h3>Информация</h3>
+        <textarea cols="30" style="resize: none;" id="infoarea"></textarea>
+        <h3>Автор</h3>
+        <textarea cols="30" style="resize: none;" id="authorarea"></textarea>
+        <input type="file" id="file1"/>
+        <br>
+        <button type="button" id="addblock" onclick="AddBlock()">Добавить блок</button>
     </main>
 
     <footer>
@@ -153,7 +146,64 @@
             </div>
         </div>
     </footer>
+    <script>
+        var isDark=false;
+        function toDark(){
+           
+            if(isDark==false)
+            {
+                Array.from(document.getElementsByTagName("*")).forEach(element => {element.classList.add("dark-theme-blocks");});
+                isDark=true;
+            }
+            else
+            {
+                Array.from(document.getElementsByTagName("*")).forEach(element => {element.classList.remove("dark-theme-blocks"); });
+                isDark=false;
+            }
+        }
+        function AddBlock()
+        {
+            // Создание главного блока
+            let div_block = document.createElement('div');
+            div_block.className = "block";
+            div_block.id = "div_block";
+            document.getElementById("big-block").append(div_block);
 
+            // Создание блока с информацией
+            let main_info_div_block = document.createElement('div');
+            main_info_div_block.className = "main-info-block";
+            main_info_div_block.id = "main_info_div_block";
+            div_block.append(main_info_div_block);
+
+            // Информация внутри основного блока
+            let myh6 = document.createElement('h6');
+            myh6.innerHTML = document.getElementById("timearea").value;
+            main_info_div_block.append(myh6);
+
+            let myh4 = document.createElement('h4');
+            myh4.innerHTML = document.getElementById("namearea").value;
+            main_info_div_block.append(myh4);
+
+            let myp = document.createElement('p');
+            myp.innerHTML = document.getElementById("infoarea").value;
+            main_info_div_block.append(myp);
+
+            // Создание блока автора
+            let author_info_div_block = document.createElement('div');
+            author_info_div_block.className = "author-info-block";
+            author_info_div_block.id = "author_info_div_block";
+            div_block.append(author_info_div_block);
+
+            // Информация внутри блока автора
+            let myimage = document.createElement('img');
+            myimage.src = URL.createObjectURL(file1.files[0]);
+            author_info_div_block.append(myimage);
+
+            let myauthor = document.createElement('p');
+            myauthor.innerHTML = document.getElementById("authorarea").value;
+            author_info_div_block.append(myauthor);
+        }
+    </script>
 </body>
 
 </html>
