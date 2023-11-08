@@ -34,6 +34,19 @@
     </header>
 
     <main class="textpadding">
+        <div class="create-blok" id="cbb">
+            <h3>Время</h3>
+            <textarea cols="30" style="resize: none;" id="timearea"></textarea>
+            <h3>Название</h3>
+            <textarea cols="30" style="resize: none;" id="namearea"></textarea>
+            <h3>Информация</h3>
+            <textarea cols="30" style="resize: none;" id="infoarea"></textarea>
+            <h3>Автор</h3>
+            <textarea cols="30" style="resize: none;" id="authorarea"></textarea>
+            <input type="file" id="file1"/>
+            <br>
+            <button type="button" id="addblock" onclick="AddBlock()">Добавить блок</button>   
+        </div>
         
         <div class="wrapper">
             <div>
@@ -123,17 +136,7 @@
 
             </div>
         </div>
-        <h3>Время</h3>
-        <textarea cols="30" style="resize: none;" id="timearea"></textarea>
-        <h3>Название</h3>
-        <textarea cols="30" style="resize: none;" id="namearea"></textarea>
-        <h3>Информация</h3>
-        <textarea cols="30" style="resize: none;" id="infoarea"></textarea>
-        <h3>Автор</h3>
-        <textarea cols="30" style="resize: none;" id="authorarea"></textarea>
-        <input type="file" id="file1"/>
-        <br>
-        <button type="button" id="addblock" onclick="AddBlock()">Добавить блок</button>
+        
     </main>
 
     <footer>

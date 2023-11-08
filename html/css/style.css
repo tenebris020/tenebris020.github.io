@@ -252,6 +252,18 @@ button
     background-color: rgb(20, 19, 19);
     color: white;
 }
+.create-blok
+{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(105, 95, 76);
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: baseline;
+}
 p
 {
     word-wrap: break-word;
