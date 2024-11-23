@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap"
       rel="stylesheet"
@@ -25,20 +25,20 @@
             pattern="^[А-Яа-яЁё]+$"
             required
           /><br />
+          <b>Отчество:</b>
+          <input
+            type="text"
+            name="patronymic" 
+            id="patronymic" 
+            pattern="^[А-Яа-яЁё]+$"
+            required
+          /><br />
           <b>Фамилия:</b>
           <input
             type="text"
             name="lastname"
-            id="lastname"
-            pattern="^[А-Яа-яЁё]+$"
-            required
-          /><br />
-          <b>Отчество:</b>
-          <input
-            type="text"
-            name="patronymic"
             pattern="[А-Яа-яЁё]+$"
-            id="patronymic"
+            id="lastname"
             required
           />
 
@@ -67,6 +67,9 @@
             <option value="Математика">Математика</option>
             <option value="Физика">Физика</option>
             <option value="Информатика">Информатика</option>
+            <option value="Биология">Биология</option>
+            <option value="Химия">Химия</option>
+            <option value="Литература">Литература</option>
           </select>
           <label for="birthdate"><b>Дата рождения</b></label>
           <input type="date" name="date" id="date" />
